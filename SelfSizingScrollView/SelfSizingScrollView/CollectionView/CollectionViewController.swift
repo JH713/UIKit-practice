@@ -16,3 +16,15 @@ class CollectionViewController: UIViewController {
     }
     
 }
+
+extension UICollectionView {
+    open override var contentSize: CGSize {
+        didSet {
+            self.invalidateIntrinsicContentSize()
+        }
+    }
+    
+    open override var intrinsicContentSize: CGSize {
+        contentSize
+    }
+}

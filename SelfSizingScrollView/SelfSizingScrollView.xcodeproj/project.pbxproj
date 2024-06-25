@@ -17,6 +17,8 @@
 		A6A0BA1C2C25517F001F9640 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA1B2C25517F001F9640 /* CollectionViewController.swift */; };
 		A6A0BA1E2C2553D7001F9640 /* SelfSizingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA1D2C2553D7001F9640 /* SelfSizingScrollView.swift */; };
 		A6A0BA202C255F32001F9640 /* SizeControlButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA1F2C255F32001F9640 /* SizeControlButtons.swift */; };
+		A6A0BA252C2AA74C001F9640 /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA242C2AA74C001F9640 /* SelfSizingTableView.swift */; };
+		A6A0BA282C2AA787001F9640 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A6A0BA272C2AA787001F9640 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,7 @@
 		A6A0BA1B2C25517F001F9640 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A6A0BA1D2C2553D7001F9640 /* SelfSizingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingScrollView.swift; sourceTree = "<group>"; };
 		A6A0BA1F2C255F32001F9640 /* SizeControlButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeControlButtons.swift; sourceTree = "<group>"; };
+		A6A0BA242C2AA74C001F9640 /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A0BA282C2AA787001F9640 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,8 @@
 		A6A0BA002C254C45001F9640 /* SelfSizingScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				A6A0BA232C2AA731001F9640 /* CollectionView */,
+				A6A0BA222C2AA728001F9640 /* TableView */,
 				A6A0BA212C2585F2001F9640 /* ScrollView */,
 				A6A0BA012C254C45001F9640 /* AppDelegate.swift */,
 				A6A0BA032C254C45001F9640 /* SceneDelegate.swift */,
@@ -71,8 +77,6 @@
 				A6A0BA0C2C254C48001F9640 /* LaunchScreen.storyboard */,
 				A6A0BA0F2C254C48001F9640 /* Info.plist */,
 				A6A0BA152C254D07001F9640 /* TabBarController.swift */,
-				A6A0BA192C255172001F9640 /* TableViewController.swift */,
-				A6A0BA1B2C25517F001F9640 /* CollectionViewController.swift */,
 				A6A0BA1F2C255F32001F9640 /* SizeControlButtons.swift */,
 			);
 			path = SelfSizingScrollView;
@@ -85,6 +89,23 @@
 				A6A0BA1D2C2553D7001F9640 /* SelfSizingScrollView.swift */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		A6A0BA222C2AA728001F9640 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A6A0BA242C2AA74C001F9640 /* SelfSizingTableView.swift */,
+				A6A0BA192C255172001F9640 /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		A6A0BA232C2AA731001F9640 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A6A0BA1B2C25517F001F9640 /* CollectionViewController.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +124,9 @@
 			dependencies = (
 			);
 			name = SelfSizingScrollView;
+			packageProductDependencies = (
+				A6A0BA272C2AA787001F9640 /* SnapKit */,
+			);
 			productName = SelfSizingScrollView;
 			productReference = A6A0B9FE2C254C45001F9640 /* SelfSizingScrollView.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +155,9 @@
 				Base,
 			);
 			mainGroup = A6A0B9F52C254C45001F9640;
+			packageReferences = (
+				A6A0BA262C2AA787001F9640 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = A6A0B9FF2C254C45001F9640 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,6 +190,7 @@
 				A6A0BA1E2C2553D7001F9640 /* SelfSizingScrollView.swift in Sources */,
 				A6A0BA1C2C25517F001F9640 /* CollectionViewController.swift in Sources */,
 				A6A0BA022C254C45001F9640 /* AppDelegate.swift in Sources */,
+				A6A0BA252C2AA74C001F9640 /* SelfSizingTableView.swift in Sources */,
 				A6A0BA202C255F32001F9640 /* SizeControlButtons.swift in Sources */,
 				A6A0BA042C254C45001F9640 /* SceneDelegate.swift in Sources */,
 			);
@@ -377,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6A0BA262C2AA787001F9640 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6A0BA272C2AA787001F9640 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6A0BA262C2AA787001F9640 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6A0B9F62C254C45001F9640 /* Project object */;
 }
