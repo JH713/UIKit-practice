@@ -20,7 +20,6 @@ class TabBarController: UITabBarController {
         viewControllers = [
             makeViewController(viewController: ScrollViewController.self, title: "Scroll View", image: UIImage(systemName: "scroll")),
             makeViewController(viewController: TableViewController.self, title: "Table View", image: UIImage(systemName: "rectangle.split.1x2.fill")),
-            makeViewController(viewController: CollectionViewController.self, title: "Collection View", image: UIImage(systemName: "rectangle.grid.3x2.fill"))
         ]
         
         tabBar.backgroundColor = .systemBackground

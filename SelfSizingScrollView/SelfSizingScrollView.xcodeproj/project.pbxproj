@@ -14,7 +14,6 @@
 		A6A0BA162C254D07001F9640 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA152C254D07001F9640 /* TabBarController.swift */; };
 		A6A0BA182C255168001F9640 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA172C255168001F9640 /* ScrollViewController.swift */; };
 		A6A0BA1A2C255172001F9640 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA192C255172001F9640 /* TableViewController.swift */; };
-		A6A0BA1C2C25517F001F9640 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA1B2C25517F001F9640 /* CollectionViewController.swift */; };
 		A6A0BA1E2C2553D7001F9640 /* SelfSizingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA1D2C2553D7001F9640 /* SelfSizingScrollView.swift */; };
 		A6A0BA202C255F32001F9640 /* SizeControlButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA1F2C255F32001F9640 /* SizeControlButtons.swift */; };
 		A6A0BA252C2AA74C001F9640 /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0BA242C2AA74C001F9640 /* SelfSizingTableView.swift */; };
@@ -31,7 +30,6 @@
 		A6A0BA152C254D07001F9640 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A6A0BA172C255168001F9640 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		A6A0BA192C255172001F9640 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		A6A0BA1B2C25517F001F9640 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A6A0BA1D2C2553D7001F9640 /* SelfSizingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingScrollView.swift; sourceTree = "<group>"; };
 		A6A0BA1F2C255F32001F9640 /* SizeControlButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeControlButtons.swift; sourceTree = "<group>"; };
 		A6A0BA242C2AA74C001F9640 /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 		A6A0BA002C254C45001F9640 /* SelfSizingScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				A6A0BA232C2AA731001F9640 /* CollectionView */,
 				A6A0BA222C2AA728001F9640 /* TableView */,
 				A6A0BA212C2585F2001F9640 /* ScrollView */,
 				A6A0BA012C254C45001F9640 /* AppDelegate.swift */,
@@ -98,14 +95,6 @@
 				A6A0BA192C255172001F9640 /* TableViewController.swift */,
 			);
 			path = TableView;
-			sourceTree = "<group>";
-		};
-		A6A0BA232C2AA731001F9640 /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				A6A0BA1B2C25517F001F9640 /* CollectionViewController.swift */,
-			);
-			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +177,6 @@
 				A6A0BA162C254D07001F9640 /* TabBarController.swift in Sources */,
 				A6A0BA182C255168001F9640 /* ScrollViewController.swift in Sources */,
 				A6A0BA1E2C2553D7001F9640 /* SelfSizingScrollView.swift in Sources */,
-				A6A0BA1C2C25517F001F9640 /* CollectionViewController.swift in Sources */,
 				A6A0BA022C254C45001F9640 /* AppDelegate.swift in Sources */,
 				A6A0BA252C2AA74C001F9640 /* SelfSizingTableView.swift in Sources */,
 				A6A0BA202C255F32001F9640 /* SizeControlButtons.swift in Sources */,
